@@ -1,61 +1,89 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
-.operator, .empty, .number:hover {
-    cursor: pointer;
+.operator,
+.empty,
+.number:hover {
+  cursor: pointer;
 }
 
 #container {
-   background-color: cornflowerblue;
-    width: 1000px;
-    height: 700px;
-    margin: 20px auto;
-    
+  /*background-color: cornflowerblue;*/
+  width: 1000px;
+  height: 700px;
+  margin: 20px auto;
 }
-#calculator{
-    width: 320px;
-    height: 520px;
-    background-color: #eaedef; 
-    margin: 0 auto;
-    border-radius: 30px;
-    box-shadow: 0 0 5px #33393d;
-    border: 3px solid rgb(47, 37, 66);
-    position: relative;
+#calculator {
+  width: 320px;
+  height: 520px;
+  background-color: #eaedef;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0 0 5px #33393d;
+  border: 3px solid rgb(47, 37, 66);
+  position: center;
 }
 
-#results{
-    height: 120px;
+#results {
+  height: 120px;
 }
 
 #keyboard {
-   height: 400px;
+  height: 400px;
 }
 
 #history {
-    text-align: right;
-    font-size: 15px;
-    opacity: 45%;
-    margin: 0 20px;
-    padding-top: 20px;
+  text-align: right;
+  font-size: 15px;
+  opacity: 45%;
+  margin: 0 20px;
+  padding-top: 20px;
 }
 
 #output {
-    font-size:35px ;
-    text-align: right;
-    height: 60px;
-    margin: 10px 20px;
-
+  font-size: 35px;
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
 }
 
-.operator, .number, .empty {
-    width: 50px;
-    height: 50px;
-    margin: 15px;
-    float: left;
-    border-radius: 50%;
-    background-color: white;
-    border-width: 0;
-    font-weight: bold;
-    font-size: 15px;
-    
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  background-color: white;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.empty {
+  background-color: #eaedef;
+  cursor: initial;
+}
+
+.operator:active,
+.number:active {
+  font-size: 13.5px;
+  color: black;
+}
+
+#divide {
+  background-color: #abdee6;
+}
+#multiply {
+  background-color: #cbaacb;
+}
+#minus {
+  background-color: #f3b0c3;
+}
+#add {
+  background-color: #ffccb6;
+}
+#equal {
+  background-color: #ffffb5;
 }
